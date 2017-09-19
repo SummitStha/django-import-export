@@ -1,0 +1,10 @@
+<html>
+<center><h1>Person Lists</h1></center>
+{% for person in persons %}
+<center><h3>{{person.name}}</h3></center>
+{% endfor %}
+<br>
+<center><h2><a href = "{% url 'export-csv' %}">Export in CSV</a></h2></center><br>
+<center><h2><a href = "{% url 'export-json' %}">Export in JSON</a></h2></center><br>
+<center><h2><a href = "{% url 'export-excel' %}">Export in Excel</a></h2></center><br>
+</html>
